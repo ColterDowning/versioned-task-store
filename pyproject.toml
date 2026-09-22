@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "versioned-task-store"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[project.scripts]
+taskstore = "taskstore_cli:main"
+
+[tool.setuptools]
+py-modules = ["taskstore_cli", "storer"]
